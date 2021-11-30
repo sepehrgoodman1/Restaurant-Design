@@ -1,0 +1,28 @@
+
+
+.animate-pizza{
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+    animation: animate 5s linear infinite;
+    z-index: 0;
+}
+.pizza-anim{
+    z-index: 10;
+    width: 100%;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0deg);
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1) translateY(-400%) rotate(360deg);opacity: 0;
+    }
+}
